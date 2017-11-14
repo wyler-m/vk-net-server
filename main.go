@@ -7,13 +7,6 @@ import (
 		// "github.com/gorilla/mux"
 		)
 
-//json structure for returning fibonacci numbers 
-type fiboutput struct {
-	N string `json:"n"`
-	Nthfibonacci string `json:"fibonacci(n)"`
-}
-
-
 /*
 --- way to build mass_friend_list
 var query = `https://api.vk.com/method/execute?access_token=${access_token}&code=${code}`;

@@ -30,17 +30,17 @@ func NewRouter() *mux.Router {
 
 var routes = Routes{
     Route{
-        "details",
+        "get_friend_list",
         "GET",
-        "/details/{userId}",
-        details,
+        "/friends/{userId}",
+        get_friend_list,
     },
-    // Route{
-    //     "TodoIndex",
-    //     "GET",
-    //     "/todos",
-    //     TodoIndex,
-    // },
+    Route{
+        "friends_of_friends",
+        "GET",
+        "/fof/{userId}",
+        friends_of_friends,
+    },
     // Route{
     //     "TodoShow",
     //     "GET",
